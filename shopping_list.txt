@@ -3,3 +3,4 @@ apple x7
 tommato x2
 water x10
 potato x9
+tree x6
