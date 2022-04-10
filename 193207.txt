@@ -1,0 +1,329 @@
+4. Git clone-за да се направи копија 
+5. Git add . , Git commit -m  “Add 5 items to the shopping list” - комитирано, со додадена порака
+6. Git add . , Git commit -b “Add quantities to the items.” - нов комит, со додадена порака
+7. Git checkout -b branch1 , git checkout branch2 - за да се креират нови гранки
+8.
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        shopping_list.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git add .
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "Add 5 items to the shopping list”
+>
+>
+>
+>
+> ^C
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "Add 5 items to the shopping list”
+
+
+
+ ^C
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   shopping_list.txt
+
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   shopping_list.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git add .
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "Add quantities to the items"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'valem@DESKTOP-1HA2Q8A.(none)')
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git checkout -b branch1
+Switched to a new branch 'branch1'
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch1)
+$ git checkout -b branch2
+Switched to a new branch 'branch2'
+
+
+9. Git push origin branch1, git push origin branch2, git push origin master - Да се синхронизирираат сите гранки во репозиториумот
+10.  Git checkout -b branch1 - да се префрлиме кон гранката branch1
+11. Git add . , git commit -m “Change quantity of item #5 - направена промена и комитирано
+12. Git checkout master - се вракаме на master
+13. Git add . , git commit -m а “Change quantity of item #2” - променета ставка и направен нов комит
+14. git push origin master, git push origin branch1, git push origin branch2 - синхронизација на сите гранки
+15. Git add . , git commit -m “Modify item #4” - нов комит со порака
+16.
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        shopping_list.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git add .
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "Add 5 items to the shopping list”
+>
+>
+>
+>
+> ^C
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "Add 5 items to the shopping list”
+
+
+
+ ^C
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   shopping_list.txt
+
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   shopping_list.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git add .
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "Add quantities to the items"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'valem@DESKTOP-1HA2Q8A.(none)')
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git checkout -b branch1
+Switched to a new branch 'branch1'
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch1)
+$ git checkout -b branch2
+Switched to a new branch 'branch2'
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch2)
+$ git checkout branch1
+Switched to branch 'branch1'
+A       shopping_list.txt
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch1)
+$ git status
+On branch branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   shopping_list.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch1)
+$ git add .
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch1)
+$ git commit -m "“Change quantity of item #5"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'valem@DESKTOP-1HA2Q8A.(none)')
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch1)
+$ git status
+On branch branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   shopping_list.txt
+
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch1)
+$ git checkout master
+Switched to branch 'master'
+A       shopping_list.txt
+Your branch is up to date with 'origin/master'.
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   shopping_list.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git add .
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "“Change quantity of item #2”
+> ^C
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "Change quantity of item #2”
+>
+> ^C^C
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ ^C
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "Change quantity of item #2”
+
+> ^C
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git commit -m "Change quantity of item #2"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'valem@DESKTOP-1HA2Q8A.(none)')
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$   git config --global user.email "milkovskaangela9@gmail.com"
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+A       shopping_list.txt
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch2)
+$ git add .
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch2)
+$ git commit -m "Modify item #4"
+[branch2 3cc41af] Modify item #4
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+ 
+- внесени досегашните логови
+
+18. Git add . , git commit -m “Modify item #4 and add item #6”. - додадени нови ставки и комитирани
+19. valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch1)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch2)
+$ git add .
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch2)
+$ git commit -m “Modify item #4 and add item #6"
+error: pathspec 'item' did not match any file(s) known to git
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch2)
+$ git status
+On branch branch2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   shopping_list.txt
+
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch2)
+$ git commit -m “Modify item #4 and add item #6"
+error: pathspec 'item' did not match any file(s) known to git
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch2)
+$ git commit -m “Modify items #4 and add item #6"
+error: pathspec 'items' did not match any file(s) known to git
+
+valem@DESKTOP-1HA2Q8A MINGW64 ~/Desktop/SI_2022_lab1_193207 (branch2)
+$ git commit -m “Modify #4 and add item #6"
+[branch2 cd37d45] “Modify
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+20. git checkout master, git merge branch1 - спојување на гранки
+21. git merge branch2 - спојување на branch2 кон master
+22.
